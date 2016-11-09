@@ -28,13 +28,13 @@ function $translateUrlLoader($q, $http) {
       throw new Error('Couldn\'t use urlLoader since no url is given!');
     }
 
-    var requestParams = {};
+//     var requestParams = {};
 
-    requestParams[options.queryParameter || 'lang'] = options.key;
+//     requestParams[options.queryParameter || 'lang'] = options.key;
 
     return $http(angular.extend({
-      url: options.url,
-      params: requestParams,
+      url: options.url + options.key,
+//       params: requestParams,
       method: 'GET'
     }, options.$http))
       .then(function(result) {
