@@ -7,7 +7,7 @@
   "ignore": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/angular-translate/angular-translate"
+    "url": "git://github.com/hughesjmh/angular-translate"
   },
   "main": "./dist/angular-translate.js",
   "devDependencies": {
